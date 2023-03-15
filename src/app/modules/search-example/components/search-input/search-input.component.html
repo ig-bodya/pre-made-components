@@ -1,0 +1,12 @@
+<div class="search-wrapper">
+    <mat-form-field class="search-input">
+        <mat-label>Search</mat-label>
+        <input matInput type="text" [(ngModel)]="searchText">
+        <button *ngIf="searchText" matSuffix mat-icon-button aria-label="Clear" (click)="searchText=''">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+    <div class="items-wrapper">
+        <div *ngFor="let item of exampleList | search: searchText" class="item">{{item}}</div>
+    </div>
+</div>

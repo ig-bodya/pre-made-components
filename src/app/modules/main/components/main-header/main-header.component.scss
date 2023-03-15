@@ -1,0 +1,25 @@
+@import "src/styles/colors";
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  background-color: $main;
+  padding: 10px;
+  border-radius: 4px;
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: $main-white;
+    cursor: pointer;
+
+    .header-icon {
+      height: 60px;
+      width: 60px;
+      font-size: 60px;
+      margin-right: 5px;
+    }
+  }
+}
