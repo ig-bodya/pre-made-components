@@ -8,11 +8,6 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'search-example',
-        pathMatch: 'full'
-      },
-      {
         path: 'search-example',
         loadChildren: () => import('../search-example/search-example.module').then(m => m.SearchExampleModule)
       }
