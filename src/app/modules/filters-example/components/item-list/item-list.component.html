@@ -1,0 +1,18 @@
+<div class="equipment-item-wrapper">
+    <span class="icon-header header">Image</span>
+    <div class="equipment-info header">
+        <div (click)="sortByName(equipments)">Name</div>
+        <div>Type</div>
+        <div>Volume</div>
+        <div>Country</div>
+    </div>
+</div>
+<div *ngFor="let equipment of equipments" class="equipment-item-wrapper">
+    <img src="{{equipment.image}}" alt="item" class="icon-wrapper">
+    <div class="equipment-info">
+        <div>{{equipment.name}}</div>
+        <div>{{equipment.type}}</div>
+        <div>{{equipment.volume}}</div>
+        <div>{{equipment.country}}</div>
+    </div>
+</div>

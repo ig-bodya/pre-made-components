@@ -1,0 +1,35 @@
+@import "src/styles/colors";
+@import "src/styles/variables";
+
+.equipment-item-wrapper {
+  color: $main-black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: $border-radius-small;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+  .equipment-info {
+    text-align: center;
+    width: calc(100% - 200px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .icon-header {
+    text-align: center;
+    width: 200px;
+  }
+
+  .header {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .icon-wrapper {
+    width: 200px;
+    height: 130px;
+    aspect-ratio: 16/9;
+    border-radius: $border-radius-small;
+  }
+}

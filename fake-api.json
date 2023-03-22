@@ -1,0 +1,36 @@
+{
+  "heavy-weaponry": [
+    {
+      "id": 1,
+      "name": "PzH 2000",
+      "type": "Self-propelled artillery",
+      "volume": 13,
+      "country": "Germany",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Italian_Army_-_132nd_Field_Artillery_Regiment_%22Ariete%22_PzH_2000_self-propelled_howitzer_in_Qatar.png"
+    },
+    {
+      "id": 2,
+      "name": "PzH 2000",
+      "type": "Self-propelled artillery",
+      "volume": 4,
+      "country": "Italy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Italian_Army_-_132nd_Field_Artillery_Regiment_%22Ariete%22_PzH_2000_self-propelled_howitzer_in_Qatar.png"
+    },
+    {
+      "id": 3,
+      "name": "Leopard 2A4",
+      "type": "Tank",
+      "volume": 8,
+      "country": "Canada",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Leopard_2A4_Austrian.jpg/1280px-Leopard_2A4_Austrian.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Su-25",
+      "type": "Aircraft ",
+      "volume": 4,
+      "country": "Macedonia",
+      "image": "https://mil.in.ua/wp-content/uploads/2022/08/Su-25_Macedonia_21093139811.jpg"
+    }
+  ]
+}

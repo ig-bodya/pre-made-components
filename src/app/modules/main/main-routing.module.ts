@@ -10,6 +10,10 @@ const routes: Routes = [
       {
         path: 'search-example',
         loadChildren: () => import('../search-example/search-example.module').then(m => m.SearchExampleModule)
+      },
+      {
+        path: 'filters-example',
+        loadChildren: () => import('../filters-example/filters-example.module').then(m => m.FiltersExampleModule)
       }
     ]
   }

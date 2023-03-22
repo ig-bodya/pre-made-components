@@ -16,8 +16,8 @@ export class ExpansionMenuComponent implements OnInit {
       route: '/search-example'
     },
     {
-      name: 'Example 2',
-      route: 'example-n'
+      name: 'Filters',
+      route: '/filters-example'
     },
     {
       name: 'Example 3',
