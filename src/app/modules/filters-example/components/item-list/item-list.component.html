@@ -1,10 +1,26 @@
 <div class="equipment-item-wrapper">
     <span class="icon-header header">Image</span>
     <div class="equipment-info header">
-        <div (click)="sortByName(equipments)">Name</div>
-        <div>Type</div>
-        <div>Volume</div>
-        <div>Country</div>
+        <div [appSort]="equipments" (setActiveSorting)="setActiveSorting($event)" data-order="desc" data-name="name"
+             class="header-item">Name
+            <mat-icon [svgIcon]="activeSorting.direction? 'a-z': 'z-a'"
+                      [ngStyle]="{'visibility': activeSorting.name === 'name'? 'visible': 'hidden'}"></mat-icon>
+        </div>
+        <div [appSort]="equipments" (setActiveSorting)="setActiveSorting($event)" data-order="asc" data-name="type"
+             class="header-item">Type
+            <mat-icon [svgIcon]="activeSorting.direction? 'a-z': 'z-a'"
+                      [ngStyle]="{'visibility': activeSorting.name === 'type'? 'visible': 'hidden'}"></mat-icon>
+        </div>
+        <div [appSort]="equipments" (setActiveSorting)="setActiveSorting($event)" data-order="asc" data-name="volume"
+             class="header-item">Volume
+            <mat-icon [svgIcon]="activeSorting.direction? 'asc': 'desc'"
+                      [ngStyle]="{'visibility': activeSorting.name === 'volume'? 'visible': 'hidden'}"></mat-icon>
+        </div>
+        <div [appSort]="equipments" (setActiveSorting)="setActiveSorting($event)" data-order="asc" data-name="country"
+             class="header-item">Country
+            <mat-icon [svgIcon]="activeSorting.direction? 'a-z': 'z-a'"
+                      [ngStyle]="{'visibility': activeSorting.name === 'country'? 'visible': 'hidden'}"></mat-icon>
+        </div>
     </div>
 </div>
 <div *ngFor="let equipment of equipments" class="equipment-item-wrapper">
